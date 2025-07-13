@@ -6,7 +6,7 @@ const Map = dynamic(() => import('./Map'), { ssr: false });
 interface MapWrapperProps {
   mapType: string;
   setMapType: (type: string) => void;
-  data: any;
+  data: unknown;
 }
 
 export default function MapWrapper({ mapType, setMapType, data }: MapWrapperProps) {
