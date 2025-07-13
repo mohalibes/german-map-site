@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "division": {
+      "title": "East-West Division",
+      "description": "Historical division between former East Germany (GDR) and West Germany",
+      "year": "1949-1990",
+      "source": "Historical Records",
+      "displayName": "Division",
+      "type": "categorical",
+      "legend": {
+        "west": { "color": "#3498db", "label": "Former West Germany" },
+        "east": { "color": "#e74c3c", "label": "Former East Germany (GDR)" },
+        "berlin": { "color": "#9b59b6", "label": "Berlin" }
+      }
+    },
+    "gdp": {
+      "title": "Economic Output",
+      "description": "Gross Domestic Product (GDP) by German state",
+      "year": "2022",
+      "source": "Statistikportal.de",
+      "displayName": "GDP",
+      "type": "numeric",
+      "unit": " million EUR",
+      "ranges": [
+        { "min": 0, "max": 50000, "color": "#fff2cc", "label": "€0-50,000M" },
+        { "min": 50000, "max": 150000, "color": "#ffd966", "label": "€50,000-150,000M" },
+        { "min": 150000, "max": 300000, "color": "#f1c232", "label": "€150,000-300,000M" },
+        { "min": 300000, "max": 500000, "color": "#bf9000", "label": "€300,000-500,000M" },
+        { "min": 500000, "max": 999999999, "color": "#7f6000", "label": "€500,000M+" }
+      ]
+    },
+    "religion": {
+      "title": "Religious Affiliation",
+      "description": "Dominant religious affiliation by state",
+      "year": "2016",
+      "source": "GESIS Leibniz Institute for the Social Sciences",
+      "displayName": "Religion",
+      "type": "categorical",
+      "legend": {
+        "catholic": { "color": "#8e44ad", "label": "Catholic" },
+        "protestant": { "color": "#3498db", "label": "Protestant" },
+        "secular": { "color": "#95a5a6", "label": "Not Religious" }
+      }
+    },
+    "voting": {
+      "title": "Electoral Results",
+      "description": "Winning party in 2025 federal election by state",
+      "year": "2025 Federal Election",
+      "source": "Bundeswahlleiterin",
+      "displayName": "Voting",
+      "type": "categorical",
+      "legend": {
+        "Union": { "color": "#000000", "label": "Union (CDU/CSU)" },
+        "SPD": { "color": "#e74c3c", "label": "SPD" },
+        "AfD": { "color": "#1e3a8a", "label": "AfD" },
+        "FDP": { "color": "#f1c40f", "label": "FDP" },
+        "Grüne": { "color": "#27ae60", "label": "Grüne" },
+        "Linke": { "color": "#8e44ad", "label": "Linke" },
+        "BSW": { "color": "#ff6b35", "label": "BSW" }
+      }
+    }
+  },
+  "states": {
+    "Brandenburg": {
+      "region": "east",
+      "gdp": 80562,
+      "religion": "secular",
+      "votedParty": "AfD"
+    },
+    "Mecklenburg-Vorpommern": {
+      "region": "east",
+      "gdp": 49871,
+      "religion": "secular",
+      "votedParty": "AfD"
+    },
+    "Sachsen": {
+      "region": "east",
+      "gdp": 134984,
+      "religion": "secular",
+      "votedParty": "AfD"
+    },
+    "Sachsen-Anhalt": {
+      "region": "east",
+      "gdp": 68253,
+      "religion": "secular",
+      "votedParty": "AfD"
+    },
+    "Thüringen": {
+      "region": "east",
+      "gdp": 66424,
+      "religion": "secular",
+      "votedParty": "AfD"
+    },
+    "Baden-Württemberg": {
+      "region": "west",
+      "gdp": 538948,
+      "religion": "catholic",
+      "votedParty": "Union"
+    },
+    "Bayern": {
+      "region": "west",
+      "gdp": 666388,
+      "religion": "catholic",
+      "votedParty": "Union"
+    },
+    "Bremen": {
+      "region": "west",
+      "gdp": 35151,
+      "religion": "protestant",
+      "votedParty": "SPD"
+    },
+    "Hamburg": {
+      "region": "west",
+      "gdp": 130873,
+      "religion": "secular",
+      "votedParty": "SPD"
+    },
+    "Hessen": {
+      "region": "west",
+      "gdp": 303310,
+      "religion": "protestant",
+      "votedParty": "Union"
+    },
+    "Niedersachsen": {
+      "region": "west",
+      "gdp": 315720,
+      "religion": "protestant",
+      "votedParty": "Union"
+    },
+    "Nordrhein-Westfalen": {
+      "region": "west",
+      "gdp": 742818,
+      "religion": "catholic",
+      "votedParty": "Union"
+    },
+    "Rheinland-Pfalz": {
+      "region": "west",
+      "gdp": 162169,
+      "religion": "catholic",
+      "votedParty": "Union"
+    },
+    "Saarland": {
+      "region": "west",
+      "gdp": 36112,
+      "religion": "catholic",
+      "votedParty": "Union"
+    },
+    "Schleswig-Holstein": {
+      "region": "west",
+      "gdp": 104709,
+      "religion": "protestant",
+      "votedParty": "Union"
+    },
+    "Berlin": {
+      "region": "berlin",
+      "gdp": 165457,
+      "religion": "secular",
+      "votedParty": "Linke"
+    }
+  }
+}
